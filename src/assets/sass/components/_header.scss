@@ -7,9 +7,14 @@ header{
     text-align: center;
 
     
-  
+    @include media('<=xphone'){
+        margin-top: 0%;
+        top: 0 !important;
+        
+     }
     @include media('<=phone'){
        top: 5em;
+       
        
     }
     @include media('>phone', '<=425px'){
