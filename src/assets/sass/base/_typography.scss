@@ -1,0 +1,17 @@
+body,html{
+    font-family: 'Muli', sans-serif;
+}
+
+.footer-left, .footer-right{
+    @include media('>phone', '<=425px'){
+        font-size: smaller;
+    }
+    @include media('<=tablet'){
+        font-size: small;
+
+        .text li{
+            margin-top: 2%;
+        }
+    }
+    
+}

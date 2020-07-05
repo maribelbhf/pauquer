@@ -1,0 +1,42 @@
+@import 'libs/breakpoints';
+@import 'base/background';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/layout';
+@import 'base/typography';
+
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;700&display=swap');
+
+// Typography
+
+    $white: #ffffff;
+
+    
+// Main 
+
+body, html {
+    height: 100%;
+    color: $white;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/*body{
+    @include media('>phone', '<=425px'){
+        display: grid;
+        place-content: center;
+        height: 100vh;
+
+        .layout{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+}
+
+*/
+
+
+
+

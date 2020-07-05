@@ -1,0 +1,46 @@
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+    
+  
+    @include media('<=phone'){
+       top: 5em;
+       
+    }
+    @include media('>phone', '<=425px'){
+        margin-top: 20%;
+    }
+
+}
+.PauquerSymb{
+    background-image: url(../img/escudo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 25%; 
+    width: 10%;
+    align-self: center;
+    margin-top: 10%;
+    @include media('<=phone'){
+        width: 12%;
+    }
+
+}
+.PauquerLogo{
+    background-image: url(../img/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80%;
+    padding-top: 26.64%; 
+    margin: auto;
+    align-self: center;
+    @include media('<=phone'){
+        width: 85%;
+        align-self: center;
+    }
+}
+
