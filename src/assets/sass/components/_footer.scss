@@ -11,9 +11,11 @@ footer{
     justify-content: space-between;
     text-align: center;
 
+    @include media('<=xphone'){
 
-    
-
+        margin-left: 1%;
+        
+    }
     @include media('<=phone'){
         flex-direction: column;
         text-align: center;
@@ -30,16 +32,17 @@ footer{
 }
 .mobile-only{
 display: none;
+margin-bottom: 5%;
 @include media('<=phone'){
     display: inline;
     align-self: center;
-    margin-left: 10%;
+    margin-left: 12%;
 }
 @include media('>phone', '<=425px'){
     display: inline;
     align-self: center;
     margin-left: 10%;
-    
+    margin-bottom: 20%;
 }
 }
 
@@ -96,6 +99,10 @@ display: none;
         &:last-child {
             padding-right: 0;
         }
+    }
+    @include media('<=xphone'){
+        margin-left: 0;
+        margin-right: 5%;
     }
 
     @include media('<=desktop'){

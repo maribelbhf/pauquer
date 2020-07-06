@@ -22,7 +22,7 @@ const Footer = () => {
             <div className="footer-right">
                 <ul className="text">
                     <span className="soon"><strong>Coming soon</strong></span>
-                    <li>more design, more art, more passion...</li>
+                    <li>more design, more art, <strong>more passion...</strong></li>
                 </ul>
             </div>
         </footer>
