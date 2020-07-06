@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Pauquer`,
-    description: `Leandry Pauquer website`,
+    description: `Graphic designer specialized in Branding: Visual Identity and naming. Also in ArtCover Design, packaging, editorial, digital, web e illustration.`,
     author: `@maribelbhf`,
     url: `www.pauquer.com`,
   },
