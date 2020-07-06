@@ -12,6 +12,12 @@ import BackgroundImage from '../assets/img/background.jpg'
 import Footer from "../components/footer"
 import "../assets/sass/main.scss"
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faBehance, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fab, faInstagram, faBehance, faLinkedin)
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
