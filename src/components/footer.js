@@ -14,9 +14,9 @@ const Footer = () => {
             </div>
             <div className="footer-center">
                 <ul>
-                    <li><a target="_blank" href="https://www.behance.net/pauquer"><FontAwesomeIcon icon={['fab', 'behance']} color="white" size="lg" /></a></li>
-                    <li><a target="_blank" href="http://instagram.com/pauquer_"><FontAwesomeIcon icon={['fab', 'instagram']} color="white" size="lg" /></a></li>
-                    <li><a target="_blank" href="http://linkedin.com/in/pauquer/"><FontAwesomeIcon icon={['fab', 'linkedin']} color="white" size="lg" /></a></li>
+                    <li><a target="_blank" rel="noopener" href="https://www.behance.net/pauquer"><FontAwesomeIcon icon={['fab', 'behance']} color="white" size="lg" /></a></li>
+                    <li><a target="_blank" rel="noopener" href="http://instagram.com/pauquer_"><FontAwesomeIcon icon={['fab', 'instagram']} color="white" size="lg" /></a></li>
+                    <li><a target="_blank" rel="noopener" href="http://linkedin.com/in/pauquer/"><FontAwesomeIcon icon={['fab', 'linkedin']} color="white" size="lg" /></a></li>
                 </ul>
             </div>
             <div className="footer-right">
