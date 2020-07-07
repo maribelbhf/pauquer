@@ -7,32 +7,27 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import BackgroundImage from '../assets/img/background.jpg'
+
 import Footer from "../components/footer"
 import "../assets/sass/main.scss"
-
-import { library } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { library, config } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram, faBehance, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
-library.add(fab, faInstagram, faBehance, faLinkedin)
+import Background from '../components/background'
 
+library.add(fab, faInstagram, faBehance, faLinkedin)
+config.autoAddCss = false;
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+
 
   return (
     <>
-      <div className="backgroundImage"><img src={BackgroundImage} alt=""></img></div>
+
+      <Background />
+
       <div className="grid">
         <div
           style={{
