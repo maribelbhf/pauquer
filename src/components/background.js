@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import BackgroundImage from '../assets/img/background.jpg'
 import BackgroundImageW from '../assets/img/background.webp'
-import RBackgroundImage from '../assets/img/mobileBackground.png'
+import RBackgroundImage from '../assets/img/mobileBackground.jpg'
 import RBackgroundImageW from '../assets/img/mobileBackground.webp'
 class Background extends Component {
 

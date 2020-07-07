@@ -7,32 +7,21 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
 import Footer from "../components/footer"
 import "../assets/sass/main.scss"
-import { Helmet } from "react-helmet";
-
-import { library } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { library, config } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram, faBehance, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import Background from '../components/background'
 
 library.add(fab, faInstagram, faBehance, faLinkedin)
-
+config.autoAddCss = false;
 
 const Layout = ({ children }) => {
 
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
   return (
     <>
