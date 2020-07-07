@@ -1,10 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Pauquer`,
-    description: `Graphic designer specialized in Branding: Visual Identity and naming. Also in ArtCover Design, packaging, editorial, digital, web e illustration.`,
+    description: `Leandry Pauquer website`,
     author: `@maribelbhf`,
     url: `www.pauquer.com`,
-    siteUrl: `www.pauquer.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -36,16 +35,6 @@ module.exports = {
         rule: {
           include: `/assets/img`, // Where the animated svgs are.
         }
-      }
-    },
-    `gatsby-plugin-sitemap`,
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: 'https://www.pauquer.com',
-        sitemap: 'https://www.pauquer.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }],
-
       }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
