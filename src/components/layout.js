@@ -8,18 +8,22 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import BackgroundImage from '../assets/img/background.jpg'
+
 import Footer from "../components/footer"
 import "../assets/sass/main.scss"
+import { Helmet } from "react-helmet";
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram, faBehance, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
+import Background from '../components/background'
+
 library.add(fab, faInstagram, faBehance, faLinkedin)
 
 
 const Layout = ({ children }) => {
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -32,7 +36,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div className="backgroundImage"><img src={BackgroundImage} alt=""></img></div>
+
+      <Background />
+
       <div className="grid">
         <div
           style={{
