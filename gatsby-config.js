@@ -3,8 +3,8 @@ module.exports = {
     title: `Pauquer`,
     description: `Graphic designer specialized in Branding: Visual Identity and naming. Also in ArtCover Design, packaging, editorial, digital, web e illustration.`,
     author: `@maribelbhf`,
-    url: `www.pauquer.com`,
-    siteUrl: `www.pauquer.com`,
+    url: `https://www.pauquer.com`,
+    siteUrl: `https://www.pauquer.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
