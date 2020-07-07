@@ -4,6 +4,7 @@ module.exports = {
     description: `Graphic designer specialized in Branding: Visual Identity and naming. Also in ArtCover Design, packaging, editorial, digital, web e illustration.`,
     author: `@maribelbhf`,
     url: `www.pauquer.com`,
+    siteUrl: `www.pauquer.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -43,7 +44,8 @@ module.exports = {
       options: {
         host: 'https://www.pauquer.com',
         sitemap: 'https://www.pauquer.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
+        policy: [{ userAgent: '*', allow: '/' }],
+
       }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
